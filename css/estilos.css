@@ -1,0 +1,261 @@
+/*
+Selectores: lo de html
+propiedades:cosas particulares que podemos hacer con cada elemento
+valores: cosas que esperan recibir como variables las propiedades
+*/
+body {
+  font-family: 'Poppins', sans-serif;/* Para agregar el tipo de fuente que deseas */
+  background: white;/* Agregas el color de fondo del selector que has seleccionado osea body*/
+  margin: 0px;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Archivo Black', sans-serif;/* Con la coma agregas a todos los selectores el mismo estilo */
+  font-weight: normal; /* Tipo de fuente, negrita o fina dependiendo del gusto*/
+
+}
+h1{
+  font-size: 40px;/* Cambia el tamaño de la fuente*/
+  line-height: 1.5;/* se usa para centrar texto verticalmente */
+  letter-spacing: -.2px;/* para saber cuanto espacio puedes darle  */
+  color: white;
+  margin: 0;
+}
+h1 strong{
+  color:#026fff;
+}
+
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.heroe{
+height: 300px;
+/*background-image: url('../imagenes/imagenFrank.jpg');
+background-size: 500px 300px;
+background-repeat: no-repeat;
+background-position-x:right;*/
+background-color: #1b2127;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.hero-img{
+object-fit: cover;
+}
+.portafolio{
+  background: #fafafa;
+  padding: 20px;
+}
+.proyecto{
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px ;
+  padding: 20px;
+  display: flex;
+  background:white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.youtube{
+  margin:10px 0;
+}
+.project-date{
+  margin: 10px 0;
+}
+.project-url{
+  margin: 10px 0;
+}
+.project-description{
+  font-size: 20px;
+}
+.project-details{
+  width: 500px;
+}
+.project-imageContainer{
+  width: 500px;
+}
+.project strong{
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+
+}
+.header a{
+  color: white;
+  text-decoration: none;
+}
+.header ul{
+  display: flex;
+  height: inherit;
+  align-items: center;
+
+}
+.header ul li{
+  height: inherit;
+  display: flex;
+  align-items: center;
+
+}
+.header a{
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.menu{
+  height: inherit;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+figure{
+  margin: 0;
+}
+.footer{
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer img{
+  vertical-align: middle;
+}
+.footer a {
+  color: white;
+}
+.eventList{
+  display: flex;
+  flex-wrap: wrap;
+}
+.event-list-title{
+  margin-left: 10px;
+}
+.evento {
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f4fbff;
+}
+.evento img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description{
+  text-align: left;
+}
+.event-url{
+  color: #056fff;
+  border: 1px solid #056fff;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.url{
+  color: red;
+  border: 1px solid red;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.contacto{
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social{
+
+}
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+.social-link.twitter{
+  background-image: url('../imagenes/twitter.svg');
+
+}
+.social-link.facebook{
+  background-image: url('../imagenes/facebook.svg');
+
+}
+.social-link.github{
+  background-image: url('../imagenes/github.svg');
+
+}
+.social-link.instagram{
+  background-image: url('../imagenes/instagram.svg');
+
+}
+.Gmail{
+  border-color: gray;
+  padding: 10px 20px 10px 25px;
+  border-radius: 5px;
+  border-style: solid;
+  background-image: url('../imagenes/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+
+}
+.Enviar{
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 10px 0;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+
+}
+.forn-email h3{
+   font-family: 'Archivo Black', sans-serif;
+}
+.container{
+  /*border: 1px solid red;*/
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
